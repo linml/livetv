@@ -1,0 +1,307 @@
+[ 2018-07-29T19:00:41+08:00 ] 221.192.180.207 /wxshare/index.php/Share/show?roomnum=20451&from=groupmessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000226s ]
+NOTIC: [2] Declaration of Home\Controller\ShareController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 619 行.
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_users_live` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_config_private` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_config` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_config` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `uid`,`user_nicename`,`avatar`,`avatar_thumb`,`islive`,`stream`,`pull`,`isvideo`,`type`,`goodnum` FROM `cmf_users_live` WHERE ( uid='20451' and islive='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`user_nicename`,`avatar`,`avatar_thumb` FROM `cmf_users` WHERE ( id='20451' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_liang` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_liang` WHERE ( uid=20451 and status=1 and state=1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: isvideo /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 61 行.
+NOTIC: [8] Undefined index: type /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: userinfo /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 83 行.
+NOTIC: [8] Undefined variable: userinfo /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: stream /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Runtime/Cache/Home/fc1b44603069baeed8bb5c39d030251e.php 第 24 行.
+NOTIC: [8] Undefined index: type /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Runtime/Cache/Home/fc1b44603069baeed8bb5c39d030251e.php 第 123 行.
+NOTIC: [8] Undefined index: type /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Runtime/Cache/Home/fc1b44603069baeed8bb5c39d030251e.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000270s ]
+
+[ 2018-07-29T19:00:42+08:00 ] 221.192.180.207 /wxshare/index.php/Share/wxLogin?roomnum=20451
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+NOTIC: [2] Declaration of Home\Controller\ShareController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 619 行.
+SQL: SHOW COLUMNS FROM `cmf_config_private` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 96 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000304s ]
+
+[ 2018-07-29T19:00:48+08:00 ] 221.192.180.207 /wxshare/index.php/Share/wxLoginCallback?roomnum=20451&code=001xXusD0o695e21ZRsD0u7hsD0xXuse&state=4599ce1d488e1d0ddc3d5fc5e38a818d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+NOTIC: [2] Declaration of Home\Controller\ShareController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 619 行.
+SQL: SHOW COLUMNS FROM `cmf_config_private` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`avatar`,`avatar_thumb`,`sex`,`signature`,`consumption`,`votestotal`,`province`,`city`,`coin`,`votes`,`birthday`,`issuper` FROM `cmf_users` WHERE ( openid!='' and openid='oAPK4wXAaiwWwkU3QpQ4EeKldRUE' ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: INSERT INTO `cmf_users` (`openid`,`user_login`,`user_pass`,`user_nicename`,`sex`,`avatar`,`avatar_thumb`,`login_type`,`last_login_ip`,`create_time`,`last_login_time`,`user_status`,`user_type`,`signature`) VALUES ('oAPK4wXAaiwWwkU3QpQ4EeKldRUE','wx_1532862048dRUE','###73b13b8b4d767f6c3c2953f123d1a721','愚夫','1','http://thirdwx.qlogo.cn/mmopen/vi_32/NialNWxV3VQoRqNJwPiaJ4icRibThrrdaq6icBqD5V5j6aAQfxdriae83hLDmFjbYglC0DYwH4NMaqZWpFcovfpGe2DA/132','http://thirdwx.qlogo.cn/mmopen/vi_32/NialNWxV3VQoRqNJwPiaJ4icRibThrrdaq6icBqD5V5j6aAQfxdriae83hLDmFjbYglC0DYwH4NMaqZWpFcovfpGe2DA/132','wx','221.192.180.207','2018-07-29 19:00:48','2018-07-29 19:00:48','1','2','这家伙很懒，什么都没留下') [ RunTime:0.0028s ]
+SQL: SELECT `id`,`user_login`,`user_nicename`,`avatar`,`avatar_thumb`,`sex`,`signature`,`consumption`,`votestotal`,`province`,`city`,`coin`,`votes`,`birthday`,`issuper` FROM `cmf_users` WHERE ( id='20611' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0005s ]
+SQL: SELECT `levelid`,`level_up` FROM `cmf_experlevel` ORDER BY level_up asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: level_a /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Common/Common/function.php 第 184 行.
+SQL: UPDATE `cmf_users` SET `token`='fad0aaccfc68dbc5177a324d12c2037c',`expiretime`='1558782048' WHERE ( id='20611' ) [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2018-07-29T19:00:48+08:00 ] 221.192.180.207 /wxshare/index.php/Share/show?roomnum=20451
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000243s ]
+NOTIC: [2] Declaration of Home\Controller\ShareController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 619 行.
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_users_live` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_config_private` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_config` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_config` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `uid`,`user_nicename`,`avatar`,`avatar_thumb`,`islive`,`stream`,`pull`,`isvideo`,`type`,`goodnum` FROM `cmf_users_live` WHERE ( uid='20451' and islive='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_nicename`,`avatar`,`avatar_thumb` FROM `cmf_users` WHERE ( id='20451' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_liang` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_liang` WHERE ( uid=20451 and status=1 and state=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: isvideo /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 61 行.
+NOTIC: [8] Undefined index: type /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 67 行.
+SQL: SELECT `id`,`user_login`,`user_nicename`,`avatar`,`avatar_thumb`,`sex`,`signature`,`consumption`,`votestotal`,`province`,`city`,`coin`,`votes`,`token`,`birthday`,`issuper` FROM `cmf_users` WHERE ( id='20611' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0003s ]
+SQL: SELECT `levelid`,`level_up` FROM `cmf_experlevel` ORDER BY level_up asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: level_a /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Common/Common/function.php 第 184 行.
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel_anchor` [ RunTime:0.0008s ]
+SQL: SELECT `levelid`,`level_up` FROM `cmf_experlevel_anchor` ORDER BY level_up asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: level_a /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Common/Common/function.php 第 207 行.
+SQL: SHOW COLUMNS FROM `cmf_users_vip` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_users_vip` WHERE ( uid=20611 and endtime>1532862048 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_liang` WHERE ( uid=20611 and status=1 and state=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_users_attention` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_users_attention` WHERE ( uid='20611' and touid='20451' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: stream /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Runtime/Cache/Home/fc1b44603069baeed8bb5c39d030251e.php 第 24 行.
+NOTIC: [8] Undefined index: type /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Runtime/Cache/Home/fc1b44603069baeed8bb5c39d030251e.php 第 123 行.
+NOTIC: [8] Undefined index: type /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Runtime/Cache/Home/fc1b44603069baeed8bb5c39d030251e.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000261s ]
+
+[ 2018-07-29T19:00:49+08:00 ] 221.192.180.207 /wxshare/index.php/Share/getGift
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000235s ]
+NOTIC: [2] Declaration of Home\Controller\ShareController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 619 行.
+SQL: SHOW COLUMNS FROM `cmf_gift` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`type`,`giftname`,`needcoin`,`gifticon` FROM `cmf_gift` ORDER BY orderno asc  [ RunTime:0.0003s ]
+
+[ 2018-07-29T19:00:49+08:00 ] 221.192.180.207 /wxshare/index.php/Share/show?roomnum=20451
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+NOTIC: [2] Declaration of Home\Controller\ShareController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 619 行.
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_users_live` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_config_private` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_config` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_config` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `uid`,`user_nicename`,`avatar`,`avatar_thumb`,`islive`,`stream`,`pull`,`isvideo`,`type`,`goodnum` FROM `cmf_users_live` WHERE ( uid='20451' and islive='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_nicename`,`avatar`,`avatar_thumb` FROM `cmf_users` WHERE ( id='20451' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_liang` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_liang` WHERE ( uid=20451 and status=1 and state=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: isvideo /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 61 行.
+NOTIC: [8] Undefined index: type /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 67 行.
+SQL: SELECT `id`,`user_login`,`user_nicename`,`avatar`,`avatar_thumb`,`sex`,`signature`,`consumption`,`votestotal`,`province`,`city`,`coin`,`votes`,`token`,`birthday`,`issuper` FROM `cmf_users` WHERE ( id='20611' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0003s ]
+SQL: SELECT `levelid`,`level_up` FROM `cmf_experlevel` ORDER BY level_up asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: level_a /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Common/Common/function.php 第 184 行.
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel_anchor` [ RunTime:0.0003s ]
+SQL: SELECT `levelid`,`level_up` FROM `cmf_experlevel_anchor` ORDER BY level_up asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: level_a /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Common/Common/function.php 第 207 行.
+SQL: SHOW COLUMNS FROM `cmf_users_vip` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_users_vip` WHERE ( uid=20611 and endtime>1532862049 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_liang` WHERE ( uid=20611 and status=1 and state=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_users_attention` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_users_attention` WHERE ( uid='20611' and touid='20451' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined index: stream /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Runtime/Cache/Home/fc1b44603069baeed8bb5c39d030251e.php 第 24 行.
+NOTIC: [8] Undefined index: type /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Runtime/Cache/Home/fc1b44603069baeed8bb5c39d030251e.php 第 123 行.
+NOTIC: [8] Undefined index: type /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Runtime/Cache/Home/fc1b44603069baeed8bb5c39d030251e.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000297s ]
+
+[ 2018-07-29T19:00:56+08:00 ] 221.192.180.207 /wxshare/index.php/Share/show?roomnum=20451&from=groupmessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+NOTIC: [2] Declaration of Home\Controller\ShareController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 619 行.
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_users_live` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_config_private` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_config` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `uid`,`user_nicename`,`avatar`,`avatar_thumb`,`islive`,`stream`,`pull`,`isvideo`,`type`,`goodnum` FROM `cmf_users_live` WHERE ( uid='20451' and islive='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_nicename`,`avatar`,`avatar_thumb` FROM `cmf_users` WHERE ( id='20451' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_liang` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_liang` WHERE ( uid=20451 and status=1 and state=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: isvideo /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 61 行.
+NOTIC: [8] Undefined index: type /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 67 行.
+SQL: SELECT `id`,`user_login`,`user_nicename`,`avatar`,`avatar_thumb`,`sex`,`signature`,`consumption`,`votestotal`,`province`,`city`,`coin`,`votes`,`token`,`birthday`,`issuper` FROM `cmf_users` WHERE ( id='20611' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0003s ]
+SQL: SELECT `levelid`,`level_up` FROM `cmf_experlevel` ORDER BY level_up asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: level_a /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Common/Common/function.php 第 184 行.
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel_anchor` [ RunTime:0.0003s ]
+SQL: SELECT `levelid`,`level_up` FROM `cmf_experlevel_anchor` ORDER BY level_up asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: level_a /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Common/Common/function.php 第 207 行.
+SQL: SHOW COLUMNS FROM `cmf_users_vip` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_users_vip` WHERE ( uid=20611 and endtime>1532862056 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_liang` WHERE ( uid=20611 and status=1 and state=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_users_attention` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_users_attention` WHERE ( uid='20611' and touid='20451' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined index: stream /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Runtime/Cache/Home/fc1b44603069baeed8bb5c39d030251e.php 第 24 行.
+NOTIC: [8] Undefined index: type /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Runtime/Cache/Home/fc1b44603069baeed8bb5c39d030251e.php 第 123 行.
+NOTIC: [8] Undefined index: type /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Runtime/Cache/Home/fc1b44603069baeed8bb5c39d030251e.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000279s ]
+
+[ 2018-07-29T19:00:57+08:00 ] 221.192.180.207 /wxshare/index.php/Share/getGift
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+NOTIC: [2] Declaration of Home\Controller\ShareController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 619 行.
+SQL: SHOW COLUMNS FROM `cmf_gift` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`type`,`giftname`,`needcoin`,`gifticon` FROM `cmf_gift` ORDER BY orderno asc  [ RunTime:0.0001s ]
+
+[ 2018-07-29T19:00:57+08:00 ] 221.192.180.207 /wxshare/index.php/Share/show?roomnum=20451&from=groupmessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+NOTIC: [2] Declaration of Home\Controller\ShareController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 619 行.
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_users_live` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_config_private` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_config` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_config` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `uid`,`user_nicename`,`avatar`,`avatar_thumb`,`islive`,`stream`,`pull`,`isvideo`,`type`,`goodnum` FROM `cmf_users_live` WHERE ( uid='20451' and islive='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`user_nicename`,`avatar`,`avatar_thumb` FROM `cmf_users` WHERE ( id='20451' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_liang` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_liang` WHERE ( uid=20451 and status=1 and state=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: isvideo /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 61 行.
+NOTIC: [8] Undefined index: type /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Home/Controller/ShareController.class.php 第 67 行.
+SQL: SELECT `id`,`user_login`,`user_nicename`,`avatar`,`avatar_thumb`,`sex`,`signature`,`consumption`,`votestotal`,`province`,`city`,`coin`,`votes`,`token`,`birthday`,`issuper` FROM `cmf_users` WHERE ( id='20611' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel` [ RunTime:0.0003s ]
+SQL: SELECT `levelid`,`level_up` FROM `cmf_experlevel` ORDER BY level_up asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: level_a /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Common/Common/function.php 第 184 行.
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_experlevel_anchor` [ RunTime:0.0003s ]
+SQL: SELECT `levelid`,`level_up` FROM `cmf_experlevel_anchor` ORDER BY level_up asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_config_private` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: level_a /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Common/Common/function.php 第 207 行.
+SQL: SHOW COLUMNS FROM `cmf_users_vip` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_users_vip` WHERE ( uid=20611 and endtime>1532862057 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_liang` WHERE ( uid=20611 and status=1 and state=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_users_attention` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_users_attention` WHERE ( uid='20611' and touid='20451' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined index: stream /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Runtime/Cache/Home/fc1b44603069baeed8bb5c39d030251e.php 第 24 行.
+NOTIC: [8] Undefined index: type /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Runtime/Cache/Home/fc1b44603069baeed8bb5c39d030251e.php 第 123 行.
+NOTIC: [8] Undefined index: type /data/wwwroot/livenew.yunbaozhibo.com/wxshare/Application/Runtime/Cache/Home/fc1b44603069baeed8bb5c39d030251e.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000271s ]
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/mui/css/mui.picker.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/home/css/layer.css">
+    <link rel="stylesheet" href="__PUBLIC__/appapi/auction/css/index.css">
+    <title>虚拟商品拍卖设置</title>
+</head>
+<body>
+<div class="auction">
+	<div class="column thumb_up">
+		 <img src="__PUBLIC__/appapi/auction/images/add.png" class="fl img-sfz" data-index="ipt-file1" onclick="file_click($(this))">
+		 <div class="shad shadd" data-select="ipt-file1">
+            <div class="title-upload">正在上传中...</div>
+            <div id="progress1">
+                <div class="progress ipt-file1"></div>
+            </div>
+        </div>
+		
+		 <div id="upload"></div>
+		 <input type="hidden" name="thumb" id="thumb" class="sf1">
+	</div>
+	
+	<input type="hidden" name="stream" id="stream" value="{$stream}">
+	<div class="column">
+		<div class="item">
+			<span>拍品名称</span>
+			<input type="text" name="title" id="title" placeholder="请输入拍品名称">
+		</div>
+	</div>
+	
+	<div class="column">
+		<div class="item">
+			<span>约会时间</span>
+			<input type="text" name="time" id="time" placeholder="点击选择约会时间" readonly>
+		</div>
+		<div class="item">
+			<span>约会地点</span>
+			<input type="text" name="addr" id="addr" placeholder="填写地址" value="{$addr}">
+		</div>
+		<div class="item">
+			<span>联系人</span>
+			<input type="text" name="contacts" id="contacts" placeholder="预设主播昵称">
+		</div>
+		<div class="item">
+			<span>联系电话</span>
+			<input type="tel" name="contacts_mobile" id="contacts_mobile" placeholder="预设主播手机号">
+		</div>
+	</div>
+	
+	<div class="column">
+		<div class="item">
+			<span>起拍价</span>
+			<input type="tel" name="price_start" id="price_start" placeholder="" value="100" oninput="this.value=this.value.replace(/\D/g,'')">
+		</div>
+		<div class="item">
+			<span>保证金</span>
+			<input type="tel" name="price_bond" id="price_bond" placeholder="" value="100" oninput="this.value=this.value.replace(/\D/g,'')">
+		</div>
+		<div class="item">
+			<span>加价幅度</span>
+			<input type="tel" name="price_fare" id="price_fare" placeholder="" value="100" oninput="this.value=this.value.replace(/\D/g,'')">
+		</div>
+	</div>
+	
+	<div class="column">
+		<div class="item">
+			<span>竞拍时间</span>
+			<span class="right">小时</span>
+			<input type="text" name="longtime" id="longtime" placeholder="" value="1.0" readonly>
+		</div>
+		<div class="item hide">
+			<span>延时值</span>
+			<span class="right">分钟</span>
+			<input type="text" name="delayed_time" id="delayed_time" placeholder="" value="1">
+		</div>
+		<div class="item hide">
+			<span>最大延时</span>
+			<span class="right">次</span>
+			<input type="text" name="delayed_nums" id="delayed_nums" placeholder="" value="1">
+		</div>
+	</div>
+	
+	<div class="column textarea">
+		<textarea name="des" id="des" placeholder="拍品描述"></textarea>
+	</div>
+	
+
+		<div class="submit">发 布</div>
+
+	
+</div>
+		
+<script>
+var uid='{$uid}';
+var token='{$token}';
+</script>
+<script src="__PUBLIC__/mui/js/mui.min.js"></script>
+<script src="__PUBLIC__/mui/js/mui.picker.min.js"></script>
+<script src="__PUBLIC__/mui/js/mui.poppicker.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/ajaxfileupload.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/appapi/auction/js/index.js"></script>
+</body>
+</html>
+

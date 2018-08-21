@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" href="__PUBLIC__/home/css/layer.css">
+    <link rel="stylesheet" href="__PUBLIC__/appapi/auction/css/detail.css">
+    <title>{$info['title']}</title>
+</head>
+<body>
+<div class="detail">
+	<div class="column">
+		<div class="thumb">
+			<img src="{$info['thumb']}">
+		</div>
+		
+		<div class="bid">
+			<div class="price_bid">
+				<div class="price_bid_title">
+					当前价格
+					<br>
+					<span class="price-icon"></span>
+				</div>
+				<div class="price_bid_nums">
+					{$info['bid_price']}
+				</div>
+			</div>
+			
+			<div class="time_item">
+				<if condition="$info['status'] eq '0' && $info['surplus'] gt '0' ">
+				<div class="surplus-title">
+					竞拍剩余时间
+				</div>
+				<div class="surplus-time">
+				</div>
+				<else/>
+				<div class="surplus-end">
+					竞拍已结束
+				</div>
+				</if>
+			</div>
+		</div>
+		
+		<div class="title">
+			竞拍名称：{$info['title']}
+		</div>
+		
+		<div class="price_column">
+			<div class="price_item">
+				<div class="price_item_top">起拍价</div>
+				<div class="price_item_bottom"><span class="price-icon"></span>{$info['price_start']}</div>
+			</div>
+			
+			<div class="price_item">
+				<div class="price_item_top">加价幅度</div>
+				<div class="price_item_bottom"><span class="price-icon"></span>{$info['price_fare']}</div>
+			</div>
+			
+			<div class="price_item">
+				<div class="price_item_top">保证金</div>
+				<div class="price_item_bottom"><span class="price-icon"></span>{$info['price_bond']}</div>
+			</div>
+			<div class="delayed_item">
+			
+			</div>
+		</div>	
+		<div class="info">
+			<p>约会地点：{$info['addr']}</p>
+			<p>约会时间：{$info['time']}</p>
+		</div>
+	</div>
+	<div class="column hide">
+		<div class="record">
+			竞拍记录
+		</div>
+	</div>
+	
+	<div class="column">
+		<div class="des-title">
+			拍品详情
+		</div>
+		<div class="des-body">
+			{$info['des']}
+		</div>
+	</div>
+	
+	<div class="column">
+		<div class="bond">
+			保证金：<span class="price-icon"></span>{$info['price_bond']}
+			<if condition="$info['bond_status'] eq '0'">
+			<a href="/index.php?g=Appapi&m=Auction&a=bond&uid={$uid}&token={$token}&auctionid={$info['id']}"><div class="setbond">
+				参拍交保证金
+			</div></a>
+			</if>
+		</div>
+	</div>
+
+</div>
+		
+<script>
+var info={$infoj};
+var surplus={$info["surplus"]};
+var uid='{$uid}';
+var token='{$token}';
+</script>
+<script type="text/javascript" src="__PUBLIC__/home/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/appapi/auction/js/detail.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,152 @@
+*{
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0);  
+	-moz-tap-highlight-color:rgba(0, 0, 0, 0);  
+	-ms-tap-highlight-color:rgba(0, 0, 0, 0);  
+	-o-tap-highlight-color:rgba(0, 0, 0, 0);  
+	tap-highlight-color:rgba(0, 0, 0, 0);  
+}
+body, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, select, textarea, button, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+ul, dl, ol {
+	list-style: none;
+}
+
+img, fieldset, input[type="submit"] {
+	border: 0 none;
+}
+
+img {
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: top;
+}
+
+em {
+	font-style: normal;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+button, input[type="button"] {
+	cursor: pointer;
+	border: 0 none;
+}
+
+menu {
+	margin: 0;
+	padding: 0;
+}
+
+input[type="number"] {
+	-webkit-user-select: text;
+}
+
+a, button, input, img {
+	-webkit-touch-callout: none;
+}
+
+input, select, textarea {
+	outline: none;
+}
+
+html, body {
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.3rem;
+	line-height: 1.5;
+	background: #eeeeee;
+	color: #666;
+	-webkit-user-select: none;
+	-webkit-text-size-adjust: none!important;
+	font-family: "Microsoft YaHei", STHeiti, Droid Sans Fallback;
+}
+.hide{
+	display:none;
+}
+
+.orange{
+	color:#fed350;
+}
+.auction{
+
+}
+
+.column{
+	background:#fff;
+	border-bottom:1px solid #bbbbbb;
+	border-top:1px solid #bbbbbb;
+}
+
+.tips{
+	font-size:14px;
+	line-height:50px;
+	text-align:center;
+	color:#999999;
+}
+
+.tips2{
+	background:#eeeeee;
+	font-size:14px;
+	line-height:50px;
+	text-align:center;
+	color:#999999;
+}
+
+.item{
+	position:relative;
+	height:50px;
+	line-height:50px;
+}
+.item span{
+	color:#999999;
+	font-size:14px;
+}
+
+.item span.right{
+	float:right;
+	color:#000000;
+}
+.item input{
+	width:60%;
+	height:50px;
+	line-height:50px;
+	color:#cccccc;
+	border:none;
+	outline: none;
+	font-size:14px;
+	margin-right:5px;
+}
+
+.submit{
+	margin:20px auto 30px;
+	width:80%;
+	height:50px;
+	line-height:50px;
+	background:#fed350;
+	color:#fff;
+	border-radius:25px;
+	text-align:center;
+	font-size:18px;
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" href="__PUBLIC__/home/css/layer.css">
+    <link rel="stylesheet" href="__PUBLIC__/appapi/auction/css/bond.css">
+    <title>参拍交保证金</title>
+</head>
+<body>
+<div class="bond">
+	<div class="column">
+		<div class="tips">
+			系统将在您的账户中扣取<span class="orange">{$info['price_bond']}</span>{$configpub['name_coin']}作为拍卖保证金暂时托管
+		</div>
+	</div>
+	<div class="column">
+		<div class="tips2">
+			为保证竞拍成功后能顺利联系到您，请填写联系方式
+		</div>
+	</div>
+	<div class="column">
+		<div class="item">
+			<span>联系人：</span>
+			<input type="text" name="contacts_name" id="contacts_name" value="{$userinfo['contacts_name']}">
+		</div>
+	</div>
+	<div class="column">
+		<div class="item">
+			<span>联系电话：</span>
+			<input type="text" name="contacts_mobile" id="contacts_mobile"  value="{$userinfo['contacts_mobile']}">
+		</div>
+	</div>
+	
+	<div class="submit">同意并确认</div>
+</div>
+<script>
+var auctionid='{$auctionid}';
+var uid='{$uid}';
+var token='{$token}';
+</script>
+<script type="text/javascript" src="__PUBLIC__/home/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/appapi/auction/js/bond.js"></script>
+</body>
+</html>
+

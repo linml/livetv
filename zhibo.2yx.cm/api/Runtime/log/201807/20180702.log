@@ -1,0 +1,9 @@
+2018-07-02 08:35:49|DEBUG|failed to upload file to qiniu|{"Err":"user disabled","Reqid":"BLsAAGbUrQ0jZj0V","Details":"","Code":419}
+2018-07-02 08:37:13|DEBUG|failed to upload file to qiniu|{"Err":"user disabled","Reqid":"BLsAAEXkE6A2Zj0V","Details":"","Code":419}
+2018-07-02 08:55:52|DEBUG|failed to upload file to qiniu|{"Err":"user disabled","Reqid":"t6wAANN6rz07Zz0V","Details":"","Code":419}
+2018-07-02 09:02:58|DEBUG|succeed to upload file to qiniu|{"hash":"Fi3A6Ej7EaSyf8PzyXr0wiyysDmi","key":"20180702090258_d4298e737912d2a98b63e9104ef4c341"}
+2018-07-02 09:03:22|DEBUG|succeed to upload file to qiniu|{"hash":"FiZY3uM5NvhwMIJQq6qjL6gMBZ6P","key":"20180702090322_a0c2960c95ac6f516c66253f4a83fff6"}
+2018-07-02 09:05:57|DEBUG|succeed to upload file to qiniu|{"hash":"Ftz2hBAitIqNapB9rSFzhyYU9Bct","key":"20180702090557_ea99b74c83c0c1edb8ac41bff481ed82"}
+2018-07-02 09:06:19|DEBUG|succeed to upload file to qiniu|{"hash":"FnfP4TIK1hFS0QZ1r1ixHXunKHLA","key":"20180702090619_1314aadb2059b7e15b40ae5d57bc22ae"}
+2018-07-02 09:06:51|DEBUG|succeed to upload file to qiniu|{"hash":"FjjlCCQE43VzMSYu8Ra5qGjK8RrC","key":"20180702090651_d5ac8f4332c942064b9866f288a8e7e0"}
+2018-07-02 10:29:36|DEBUG|succeed to upload file to qiniu|{"hash":"FpAE0wyFqfa0iXN-zfJ4eqO5vYil","key":"20180702102936_e05455d61dadae6f1678e38541418c03"}

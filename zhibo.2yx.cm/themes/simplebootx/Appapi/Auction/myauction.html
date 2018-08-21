@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" href="__PUBLIC__/home/css/layer.css">
+    <link rel="stylesheet" href="__PUBLIC__/appapi/auction/css/auction.css">
+    <title>我的竞拍</title>
+</head>
+<body>
+<div class="auction">
+	<ul class="list">
+		<volist name="list" id="vo">
+		<li>
+			<div class="list-title">
+				{$vo['auction']['title']}
+				<span class="list-status <if condition="$vo['auction']['status'] eq '-1'">  fail</if>">{$vo['auction']['tip']}</span>
+			</div>
+			
+			<div class="list-info" data-id="{$vo['auction']['id']}">
+				<img src="{$vo['auction']['thumb']}" class="list-info-thumb">
+				<div class="list-info-body">
+					<div class="list-info-title">{$vo['auction']['title']}</div>
+					<div class="list-info-bid">最高价：<span class="price-icon"></span><span class="list-info-price">{$vo['auction']['bid_price']}</span></div>
+				</div>
+			</div>
+			<div class="list-bottom">
+				<p>约会地点：{$vo['auction']['addr']}</p>
+				<p>约会时间：{$vo['auction']['time']}  <if condition="$vo['auction']['status'] eq '1'"><span class="pay" data-price="{$vo['auction']['bid_price']}" data-auctionid="{$vo['auction']['id']}">确认支付</span></if></p>
+				<if condition="$vo['auction']['status'] gt '1'">
+				<p>联系人：{$vo['auction']['contacts']}</p>
+				<p>联系电话：{$vo['auction']['contacts_mobile']}</p>
+				</if>
+			</div>
+		</li>
+		</volist>
+	</ul>
+    <empty name="list">
+    <div class="nolist">
+        <img src="__PUBLIC__/appapi/auction/images/myauction_no.png">
+    </div>
+    </empty>
+</div>
+<script>
+var uid='{$uid}';
+var token='{$token}';
+</script>
+<script type="text/javascript" src="__PUBLIC__/home/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/appapi/auction/js/myauction.js"></script>	
+</body>
+</html>
+

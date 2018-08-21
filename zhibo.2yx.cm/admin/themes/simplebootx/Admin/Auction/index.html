@@ -1,0 +1,91 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a >列表</a></li>
+			<!-- <li><a href="{:U('Auction/add')}">礼物添加</a></li> -->
+		</ul>
+		<php>$status=array("-2"=>"竞拍关闭","-1"=>"逾期未付款","0"=>"进行中","1"=>"竞拍结束","2"=>"已支付竞拍费用","3"=>"已完成");</php>
+		<form class="well form-search" method="post" action="{:U('Auction/index')}">
+			竞拍状态： 
+			<select class="select_2" name="status">
+				<option value="">全部</option>
+				<volist name="status" id="v">
+					<option value="{$key}" <if condition="$formget.status eq $key">selected</if> >{$v}</option>
+				</volist>
+
+			</select> &nbsp;&nbsp;
+			主播： 
+			<input type="text" name="uid" style="width: 200px;" value="{$formget.uid}" placeholder="请输入主播ID...">
+			竞拍用户： 
+			<input type="text" name="bid_uid" style="width: 200px;" value="{$formget.bid_uid}" placeholder="请输入用户ID...">
+			<input type="submit" class="btn btn-primary" value="搜索">
+		</form>	
+		
+		<form method="post" class="js-ajax-form" action="">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th align="center">ID</th>
+						<th>主播（ID）</th>
+						<th>名称</th>
+						<th>图片</th>
+						<th>时间</th>
+						<th>地点</th>
+						<th>联系人</th>
+						<th>联系人电话</th>
+						<th>起拍价</th>
+						<th>保证金</th>
+						<th>加价幅度</th>
+						<th>竞拍时间</th>
+						<th>竞拍用户（ID）</th>
+						<th>竞拍价格</th>
+						<th>状态</th>
+						<th>发布时间</th>
+						<th align="center">{:L('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+					<foreach name="lists" item="vo">
+					<tr>
+						<td align="center">{$vo.id}</td>
+						<td>{$vo['userinfo']['user_nicename']} ({$vo[uid]})</td>
+
+						<td>{$vo['title']}</td>
+						<td><img src="{$vo['thumb']}" style="max-height:100px;max-width:100px;"/></td>
+						<td>{$vo['time']}</td>
+						<td>{$vo['addr']}</td>
+						<td>{$vo['contacts']}</td>
+						<td>{$vo['contacts_mobile']}</td>
+						<td>{$vo['price_start']}</td>
+						<td>{$vo['price_bond']}</td>
+						<td>{$vo['price_fare']}</td>
+						<td>{$vo['longtime']}小时</td>
+						<td>
+							<if condition="$vo['bid_uid'] neq '0'">
+								{$vo['biduserinfo']['user_nicename']} ({$vo[bid_uid]})
+							<else/>
+								暂无竞拍
+							</if>
+						</td>
+						<td>{$vo['bid_price']}</td>
+						<td>{$status[$vo['status']]}</td>
+						<td>{$vo.addtime|date="Y-m-d H:i:s",###}</td>
+						<td align="center">	
+							<a href="{:U('Auction/index2',array('id'=>$vo['id']))}" >竞拍记录</a>
+							<!-- <a href="{:U('Auction/edit',array('id'=>$vo['id']))}" >编辑</a>
+							 |
+							 <a href="{:U('Auction/del',array('id'=>$vo['id']))}" class="js-ajax-dialog-btn" data-msg="您确定要删除吗？">删除</a> -->
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<div class="pagination">{$page}</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

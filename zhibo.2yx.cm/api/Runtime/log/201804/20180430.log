@@ -1,0 +1,60 @@
+2018-04-30 18:03:45|ERROR|Home.profitList|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-50,50' at line 1 in /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php:240
+Stack trace:
+#0 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php(877): NotORM_Result->query('select sum(r.to...', Array)
+#1 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php(868): NotORM_Result->queryRows('select sum(r.to...', Array)
+#2 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Model/Home.php(341): NotORM_Result->queryAll('select sum(r.to...')
+#3 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Domain/Home.php(79): Model_Home->profitList('13646', 'total', '0')
+#4 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Api/Home.php(407): Domain_Home->profitList('13646', 'total', '0')
+#5 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/PhalApi.php(57): Api_Home->profitList()
+#6 /data/wwwroot/livenew.yunbaozhibo.com/api/public/index.php(14): PhalApi->response()
+#7 {main}
+2018-04-30 18:03:56|ERROR|Home.profitList|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-50,50' at line 1 in /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php:240
+Stack trace:
+#0 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php(877): NotORM_Result->query('select sum(r.to...', Array)
+#1 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php(868): NotORM_Result->queryRows('select sum(r.to...', Array)
+#2 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Model/Home.php(341): NotORM_Result->queryAll('select sum(r.to...')
+#3 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Domain/Home.php(79): Model_Home->profitList('13646', 'total', '0')
+#4 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Api/Home.php(407): Domain_Home->profitList('13646', 'total', '0')
+#5 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/PhalApi.php(57): Api_Home->profitList()
+#6 /data/wwwroot/livenew.yunbaozhibo.com/api/public/index.php(14): PhalApi->response()
+#7 {main}
+2018-04-30 18:04:00|ERROR|Home.profitList|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-50,50' at line 1 in /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php:240
+Stack trace:
+#0 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php(877): NotORM_Result->query('select sum(r.to...', Array)
+#1 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php(868): NotORM_Result->queryRows('select sum(r.to...', Array)
+#2 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Model/Home.php(341): NotORM_Result->queryAll('select sum(r.to...')
+#3 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Domain/Home.php(79): Model_Home->profitList('13646', 'total', '0')
+#4 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Api/Home.php(407): Domain_Home->profitList('13646', 'total', '0')
+#5 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/PhalApi.php(57): Api_Home->profitList()
+#6 /data/wwwroot/livenew.yunbaozhibo.com/api/public/index.php(14): PhalApi->response()
+#7 {main}
+2018-04-30 18:04:23|ERROR|Home.profitList|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-50,50' at line 1 in /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php:240
+Stack trace:
+#0 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php(877): NotORM_Result->query('select sum(r.to...', Array)
+#1 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php(868): NotORM_Result->queryRows('select sum(r.to...', Array)
+#2 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Model/Home.php(341): NotORM_Result->queryAll('select sum(r.to...')
+#3 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Domain/Home.php(79): Model_Home->profitList('13646', 'total', '0')
+#4 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Api/Home.php(407): Domain_Home->profitList('13646', 'total', '0')
+#5 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/PhalApi.php(57): Api_Home->profitList()
+#6 /data/wwwroot/livenew.yunbaozhibo.com/api/public/index.php(14): PhalApi->response()
+#7 {main}
+2018-04-30 19:35:03|ERROR|Home.profitList|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-50,50' at line 1 in /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php:240
+Stack trace:
+#0 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php(877): NotORM_Result->query('select sum(r.to...', Array)
+#1 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php(868): NotORM_Result->queryRows('select sum(r.to...', Array)
+#2 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Model/Home.php(341): NotORM_Result->queryAll('select sum(r.to...')
+#3 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Domain/Home.php(79): Model_Home->profitList('13646', 'total', '0')
+#4 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Api/Home.php(407): Domain_Home->profitList('13646', 'total', '0')
+#5 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/PhalApi.php(57): Api_Home->profitList()
+#6 /data/wwwroot/livenew.yunbaozhibo.com/api/public/index.php(14): PhalApi->response()
+#7 {main}
+2018-04-30 19:35:07|ERROR|Home.profitList|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-50,50' at line 1 in /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php:240
+Stack trace:
+#0 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php(877): NotORM_Result->query('select sum(r.to...', Array)
+#1 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/NotORM/NotORM/Result.php(868): NotORM_Result->queryRows('select sum(r.to...', Array)
+#2 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Model/Home.php(341): NotORM_Result->queryAll('select sum(r.to...')
+#3 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Domain/Home.php(79): Model_Home->profitList('13646', 'total', '0')
+#4 /data/wwwroot/livenew.yunbaozhibo.com/api/Appapi/Api/Home.php(407): Domain_Home->profitList('13646', 'total', '0')
+#5 /data/wwwroot/livenew.yunbaozhibo.com/api/PhalApi/PhalApi.php(57): Api_Home->profitList()
+#6 /data/wwwroot/livenew.yunbaozhibo.com/api/public/index.php(14): PhalApi->response()
+#7 {main}

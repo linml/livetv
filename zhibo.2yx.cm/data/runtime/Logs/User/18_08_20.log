@@ -1,0 +1,39 @@
+[ 2018-08-20T14:09:27+08:00 ] 39.85.62.45 /index.php?g=User&m=indexadmin&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate /data/wwwroot/zhibo.2yx.cm/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = '15012345670' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: user_email /data/wwwroot/zhibo.2yx.cm/simplewind/Core/Library/Think/Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: user_email /data/wwwroot/zhibo.2yx.cm/simplewind/Core/Library/Think/Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto /data/wwwroot/zhibo.2yx.cm/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT `id` FROM `cmf_users` WHERE ( code='Q33UGG' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT `id` FROM `cmf_users` WHERE ( code='Q33UGG' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: INSERT INTO `cmf_users` (`user_login`,`user_pass`,`user_nicename`,`avatar`,`sex`,`signature`,`user_status`,`create_time`,`user_type`,`code`,`avatar_thumb`) VALUES ('15012345670','###ea1e6729b1bcd5575033baf0e8cd127b','测试0','/default.jpg','1','','1','2018-08-20 14:09:27','2','Q33UGG','/default_thumb.jpg') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','添加会员：21007','659897901','1534745367') [ RunTime:0.0002s ]
+
+[ 2018-08-20T14:09:59+08:00 ] 39.85.62.45 /index.php?g=User&m=indexadmin&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate /data/wwwroot/zhibo.2yx.cm/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = '15012345671' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: user_email /data/wwwroot/zhibo.2yx.cm/simplewind/Core/Library/Think/Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: user_email /data/wwwroot/zhibo.2yx.cm/simplewind/Core/Library/Think/Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto /data/wwwroot/zhibo.2yx.cm/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT `id` FROM `cmf_users` WHERE ( code='7LANLB' ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: INSERT INTO `cmf_users` (`user_login`,`user_pass`,`user_nicename`,`avatar`,`sex`,`signature`,`user_status`,`create_time`,`user_type`,`code`,`avatar_thumb`) VALUES ('15012345671','###ea1e6729b1bcd5575033baf0e8cd127b','测试1','/default.jpg','1','','1','2018-08-20 14:09:59','2','7LANLB','/default_thumb.jpg') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','添加会员：21008','659897901','1534745399') [ RunTime:0.0003s ]
+

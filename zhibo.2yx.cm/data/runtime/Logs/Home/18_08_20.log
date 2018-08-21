@@ -1,0 +1,8 @@
+[ 2018-08-20T14:03:20+08:00 ] 39.85.62.45 /index.php?g=home&m=user&a=threeparty
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `cmf_config` [ RunTime:0.0008s ]
+SQL: SELECT `mobile`,`address`,`apk_ewm`,`ipa_ewm`,`wechat_ewm`,`sina_icon`,`sina_title`,`sina_desc`,`sina_url`,`qq_icon`,`qq_title`,`qq_desc`,`qq_url` FROM `cmf_config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+

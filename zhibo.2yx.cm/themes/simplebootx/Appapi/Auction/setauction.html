@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" href="__PUBLIC__/home/css/layer.css">
+    <link rel="stylesheet" href="__PUBLIC__/appapi/auction/css/auction.css">
+    <title>竞拍管理</title>
+</head>
+<body>
+<div class="auction">
+	<ul class="list">
+		<volist name="list" id="vo">
+		<li>
+			<div class="list-title">
+				{$vo['title']}
+				<span class="list-status <if condition="$vo['status'] eq '-1'">  fail</if>">{$vo['tip']}</span>
+			</div>
+			
+			<div class="list-info" data-id="{$vo['id']}">
+				<img src="{$vo['thumb']}" class="list-info-thumb">
+				<div class="list-info-body">
+					<div class="list-info-title">{$vo['title']}</div>
+					<div class="list-info-bid">最高价：<span class="price-icon"></span><span class="list-info-price">{$vo['bid_price']}</span></div>
+				</div>
+			</div>
+			<div class="list-bottom">
+				<p>约会地点：{$vo['addr']}</p>
+				<p>约会时间：{$vo['time']}</p>
+				<if condition="$vo['status'] gt '0'">
+				<p>联系人：{$vo['userinfo']['contacts_name']}</p>
+				<p>联系电话：{$vo['userinfo']['contacts_mobile']}</p>
+				</if>
+			</div>
+		</li>
+		</volist>
+	</ul>
+    <empty name="list">
+    <div class="nolist">
+        <img src="__PUBLIC__/appapi/auction/images/setauction_no.png">
+    </div>
+    </empty>
+
+</div>
+		
+</body>
+</html>
+

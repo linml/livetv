@@ -1,0 +1,266 @@
+*{
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0);  
+	-moz-tap-highlight-color:rgba(0, 0, 0, 0);  
+	-ms-tap-highlight-color:rgba(0, 0, 0, 0);  
+	-o-tap-highlight-color:rgba(0, 0, 0, 0);  
+	tap-highlight-color:rgba(0, 0, 0, 0);  
+}
+body, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, select, textarea, button, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+ul, dl, ol {
+	list-style: none;
+}
+
+img, fieldset, input[type="submit"] {
+	border: 0 none;
+}
+
+img {
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: top;
+}
+
+em {
+	font-style: normal;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+button, input[type="button"] {
+	cursor: pointer;
+	border: 0 none;
+}
+
+menu {
+	margin: 0;
+	padding: 0;
+}
+
+input[type="number"] {
+	-webkit-user-select: text;
+}
+
+a, button, input, img {
+	-webkit-touch-callout: none;
+}
+
+input, select, textarea {
+	outline: none;
+}
+
+html, body {
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.3rem;
+	line-height: 1.5;
+	background: #eeeeee;
+	color: #666;
+	-webkit-user-select: none;
+	-webkit-text-size-adjust: none!important;
+	font-family: "Microsoft YaHei", STHeiti, Droid Sans Fallback;
+}
+.hide{
+	display:none;
+}
+
+.price-icon{
+	background:url("../images/coin.png") no-repeat;
+	background-size:18px auto;
+    overflow: hidden;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: bottom;
+}
+.detail{
+	
+	
+}
+.column{
+	background:#fff;
+	position:relative;
+	margin-bottom:20px;
+}
+.thumb{
+	margin-bottom:40px;
+	text-align:center;
+}
+.thumb img{
+	max-width:100%;
+	max-height:200px;
+}
+
+.bid{
+	height:50px;
+	background:#f55d30;
+}
+
+.bid .price_bid{ 
+	float:left;
+	height:50px;
+	color:#fff;
+	margin-left:20px;
+}
+.bid .price_bid .price_bid_title{
+	float:left;
+	height:50px;
+	text-align:right;
+	line-height:25px;
+}
+
+.bid .price_bid .price_bid_nums{
+	float:left;
+	line-height:50px; 
+	font-size:30px;
+	margin-left:5px;
+}
+.bid .time_item{
+	float:right;
+	width:150px;
+	height:50px;
+	background:#fed350;
+	border-radius:25px 0 0 25px;
+}
+.bid .time_item .surplus-title{
+	color:#555555;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	font-size:14px;
+}
+
+.bid .time_item .surplus-time{
+	color:#555555;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:14px;
+}
+
+
+.bid .time_item .surplus-time span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+	line-height:25px;
+    background: #e4007f;
+    color: #fff;
+	text-align:center;
+	margin: 0 3px;
+}
+
+.bid .time_item .surplus-end{
+	color:#fff;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	font-size:18px;
+}
+
+
+
+.title{
+	line-height:40px;
+	font-size:16px;
+	font-weight:bold;
+	color:#000;
+	padding-left:10px;
+}
+
+.price_column{
+	height:120px;
+	background:#fcf6e5;
+	text-align:center;
+}
+.price_column .price_item{
+	float:left;
+	width:33%;
+	height:50px;
+	line-height:25px;
+	margin:15px 0 15px -1px;
+	border-left:1px solid #dddddd;
+}
+.price_column .price_item:first-child{
+	border-left:none;
+	margin-left:0;
+}
+.delayed_item{
+	clear:both;
+	
+	border-top:2px solid #dddddd;
+}
+
+.info {
+	padding-left:10px
+}
+.info p{
+	line-height:30px;
+	color:#9b9b9b;
+	font-size:14px;
+}
+
+.record{
+	height:50px;
+	line-height:50px;
+	color:#000;
+	font-size:14px;
+	padding-left:10px;
+}
+
+.des-title{
+	height:30px;
+	line-height:30px;
+	color:#000;
+	font-size:14px;
+	padding-left:10px;
+}
+.des-body{
+	padding:10px;
+	line-height:25px;
+	font-size:14px;
+}
+
+.bond{
+	height:50px;
+	line-height:50px;
+	color:#000;
+	font-size:14px;
+	padding-left:10px;
+}
+.bond .price-icon{
+	vertical-align:middle;
+}
+.bond .setbond{
+	float:right;
+	margin-top:5px;
+	margin-right:20px;
+	width:100px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	color:#fff;
+	background:#fed350;
+	border-radius:20px;
+}

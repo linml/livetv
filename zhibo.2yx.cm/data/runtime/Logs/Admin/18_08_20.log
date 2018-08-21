@@ -1,0 +1,26 @@
+[ 2018-08-20T14:00:44+08:00 ] 39.85.62.45 /index.php?g=Admin&m=storage&a=setting_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_options` WHERE ( option_name='cmf_settings' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_options` SET `option_name`='cmf_settings',`option_value`='{\"banned_usernames\":\"\",\"storage\":{\"type\":\"Qiniu\",\"Qiniu\":{\"accessKey\":\"2diT3K7_zxtzVJ-ha1_6tVfK1aO7OKcvTKIbSDLD\",\"secretKey\":\"PBdrP_YLAbZFinHN_fCbJfzdRTjwW-dFBS5FSTvV\",\"domain\":\"phonelive\",\"bucket\":\"qiniu.2yx.cm\",\"upHost\":\"\"}}}' WHERE ( option_name='cmf_settings' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','编辑文件存储：Qiniu','659897901','1534744844') [ RunTime:0.0003s ]
+
+[ 2018-08-20T14:03:18+08:00 ] 39.85.62.45 /index.php?g=Admin&m=Config&a=set_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cmf_config` [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_config` SET `maintain_switch`='0',`maintain_tips`='维护通知：为了更好的为您服务，本站正在升级维护中，因此带来不便深表歉意
+',`sitename`='大鱼TV',`site`='http://zhibo.2yx.cm',`site_url`='http://zhibo.2yx.cm/api/public/',`copyright`=' Copyright©  2012-2016, ICP备15017218号-1',`name_coin`='钻石',`name_votes`='映票',`enter_tip_level`='1',`mobile`='0538-8270220',`address`='山东省泰安市泰山区万达广场2号楼1702 室',`apk_ewm`='http://qiniulive.yunbaozhibo.com/20180327_5ab9dd1243569.png',`ipa_ewm`='http://qiniulive.yunbaozhibo.com/20180327_5ab9dd1bb32b8.png',`wechat_ewm`='http://qiniulive.yunbaozhibo.com/20180327_5ab9dd22c62b9.png',`sina_icon`='http://qiniulive.yunbaozhibo.com/20180327_5ab9dd2b7eb78.png',`sina_title`='新浪微博',`sina_desc`='云豹官方微博',`sina_url`='https://weibo.com/yunbaokj?topnav=1&wvr=6&topsug=1&is_all=1',`qq_icon`='http://qiniulive.yunbaozhibo.com/20180328_5abb32bf3be7c.png',`qq_title`='官方网站',`qq_desc`='云豹官方网站',`qq_url`='http://www.yunbaokj.com/',`login_type`='qq,wx,facebook,twitter',`share_type`='qq,qzone,wx,wchat,facebook,twitter',`apk_ver`='3.3.4',`apk_url`='https://download.yunbaozhibo.com/JSAPP/',`apk_des`='有新版本，是否更新',`ipa_ver`='8.9.2',`ios_shelves`='5.22',`ipa_url`='https://download.yunbaozhibo.com/JSAPP/',`ipa_des`='有新版本，是否更新',`pc_url`='https://demoapp.oss-cn-qingdao.aliyuncs.com/JSPCAPP.msi',`qr_url`='http://qiniulive.yunbaozhibo.com/20180205_5a77e52154191.png',`wx_siteurl`='',`share_title`='我在这里直播，大家都来观看哦',`share_des`='正在直播，快来一起看呀!',`app_android`='https://download.yunbaozhibo.com/JSAPP/',`app_ios`='https://download.yunbaozhibo.com/JSAPP/',`live_width`='1280',`live_height`='800',`keyframe`='15',`fps`='30',`quality`='95',`live_type`='0;普通房间,1;密码房间,2;门票房间,3;计时房间',`live_time_coin`='1，2，3，40，50，60' WHERE ( id='1' ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_admin_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `cmf_admin_log` (`adminid`,`admin`,`action`,`ip`,`addtime`) VALUES ('1','admin','修改公共设置','659897901','1534744998') [ RunTime:0.0003s ]
+
