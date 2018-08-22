@@ -21,11 +21,19 @@ return array(
      */
     'Qiniu' =>  array(
         //统一的key
-        'accessKey' => '2diT3K7_zxtzVJ-ha1_6tVfK1aO7OKcvTKIbSDLD',
-        'secretKey' => 'PBdrP_YLAbZFinHN_fCbJfzdRTjwW-dFBS5FSTvV',
+//        'accessKey' => '2diT3K7_zxtzVJ-ha1_6tVfK1aO7OKcvTKIbSDLD',
+//        'secretKey' => 'PBdrP_YLAbZFinHN_fCbJfzdRTjwW-dFBS5FSTvV',
         //自定义配置的空间
-        'space_bucket' => 'phonelive',
-        'space_host' => 'http://qiniu.2yx.cm',
+//        'space_bucket' => 'phonelive',
+//        'space_host' => 'http://qiniu.2yx.cm',
+
+        //统一的key
+        'accessKey' => 'sXKmMrgAzuQNx3EUtrND2V85rbwHKvriHvnCm38_',
+        'secretKey' => 'TkhhBldSe4LOzCyNZSlE82WgXyzsdJQ2RmGBr_Cx',
+        //自定义配置的空间
+        'space_bucket' => 'livedemo',
+        'space_host' => 'http://qiniutxdemo.yunbaozhibo.com',
+
     ),
 		
 		 /**
