@@ -27,7 +27,8 @@ class IndexController extends HomebaseController {
 		$indexLive=M("users_live")->query("select l.* from __PREFIX__users_live l left join __PREFIX__users u on l.uid=u.id where l.islive='1' and u.isrecommend='1' and l.type='0' ");
 
 		//var_dump($indexLive);
-		
+
+
 		foreach ($indexLive as $k => $v){
 			if($v['thumb']==""){
 				$indexLive[$k]['thumb']=get_upload_path($v['avatar']);
