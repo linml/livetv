@@ -43,7 +43,7 @@ class IndexController extends HomebaseController {
 		$firstUid=$indexLive[0]['uid'];
 
 		$firstLive = "rtmp://live.hkstv.hk.lxdns.com/live/hks";
-		$firstLive = "http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8";
+		$firstLive = "rtmp://219.232.160.122/livestream/20ef0fed3abb88b0beeabac91e7056f5";
 
 		$this->assign("indexLive",$indexLive1);
 		$this->assign("firstUid",$firstUid);
