@@ -38,7 +38,6 @@ class IndexController extends HomebaseController {
 		}
 
 //		var_dump($indexLive);exit;
-
 		$sort=array_column($indexLive,"fans_nums");
 		array_multisort($sort, SORT_DESC, $indexLive);
 		$indexLive1=array_slice($indexLive,0,4);
