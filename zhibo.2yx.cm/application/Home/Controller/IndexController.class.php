@@ -15,7 +15,7 @@ class IndexController extends HomebaseController {
 	
     //首页
 	public function index() {
-
+        var_dump(333);exit;
 
 		$prefix= C("DB_PREFIX");
 		$this->assign("current",'index');	
