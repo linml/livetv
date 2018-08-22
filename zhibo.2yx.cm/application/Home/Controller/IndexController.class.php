@@ -41,6 +41,7 @@ class IndexController extends HomebaseController {
 		$indexLive1=array_slice($indexLive,0,4);
 		$firstLive=$indexLive[0]['pull'];
 		$firstUid=$indexLive[0]['uid'];
+		$firstLive = "rtmp://live.hkstv.hk.lxdns.com/live/hks";
 		$this->assign("indexLive",$indexLive1);
 		$this->assign("firstUid",$firstUid);
 		$this->assign("firstLive",$firstLive);
