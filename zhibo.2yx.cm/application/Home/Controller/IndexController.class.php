@@ -35,7 +35,8 @@ class IndexController extends HomebaseController {
 			
 			$indexLive[$k]['fans_nums']=M("users_attention")->where("touid={$v['uid']}")->count();
 		}
-		var_dump($indexLive);exit;
+
+		var_dump(C('DB_NAME'));exit;
 
 		$sort=array_column($indexLive,"fans_nums");
 		array_multisort($sort, SORT_DESC, $indexLive);
