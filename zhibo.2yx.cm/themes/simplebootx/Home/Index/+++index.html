@@ -55,37 +55,21 @@
 			<div class="main_top_pic"><img src="__PUBLIC__/home/images/index/main_top.png"></div>
 			<div class="main clearfix">
 
+				<div id="focuspic" class="focuspic feed-list">
+					<ul class="list">
+						<volist name="recommend" id="v">
 
-				<!-- 热门直播 -->
-				<div class="g-box feed-list" id="hot">
-					<div class="box-hd">
-						<h2 class="box-title"><span class="icon"><img src="__PUBLIC__/home/images/index/remen.png"></span>明星主播</h2>
-						<!-- 	<a class="box-more" href="/category/1">查看更多 &gt;&gt;</a> -->
-					</div>
-					<div class="box-bd">
-						<ul class="list">
-							<volist name="hot" id="v">
-								<li class="feed <if condition="$v['islive'] eq '1'">live<else/></if> "><a class="link" href="/{$v['uid']}" target="_blank"><img class="screenshot thumb" src="__PUBLIC__/home/images/lazyload.png" data-original="{$v['thumb']}"/>
-								<div class="user">
-									<div class="user_left fl"><img class="avatar thumb" src="__PUBLIC__/home/images/lazyload.png" data-original="{$v['avatar']}"/></div>
-									<div class="user_right fl">
-										<p class="username">{$v['user_nicename']}</p>
-										<p class="bottom">
-											<span class="type">{$v['signature']}</span>
-											<span class="nums">{$v['nums']}</span>
-										</p>
-									</div>
+							 <li class="normal  feed <if condition="$i eq '1'"> mar_left0</if>" >
+							 	<p class="normal_title">{$v['user_nicename']}</p>
+								<a class="link clearfix" target="_blank" href="/{$v['uid']}">
+									<img class="screenshot thumb" src="__PUBLIC__/home/images/lazyload.png" data-original="{$v['thumb']}"/>
+								</a>
+							</li>
 
-								</div>
-
-							</a></li>
-							</volist>
-
-						</ul>
-					</div>
+						</volist>
+					</ul>
 				</div>
 				<div class="gray_line"></div>
-
 				<!-- 热门直播 -->
 				<div class="g-box feed-list" id="hot">
 					<div class="box-hd">
@@ -114,120 +98,31 @@
 						</ul>
 					</div>
 				</div>
-				<div class="gray_line"></div>
-
-				<!-- 热门直播 -->
-				<div class="g-box feed-list" id="hot">
+				<div class="gray_line"></div>				
+				<!-- 最新直播 -->
+				<div class="g-box feed-list" id="living">
 					<div class="box-hd">
-						<h2 class="box-title"><span class="icon"><img src="__PUBLIC__/home/images/index/remen.png"></span>足球主播</h2>
-						<!-- 	<a class="box-more" href="/category/1">查看更多 &gt;&gt;</a> -->
+						<h2 class="box-title"><span class="icon"><img src="__PUBLIC__/home/images/index/zuixin.png"></span>最新直播</h2>
 					</div>
 					<div class="box-bd">
 						<ul class="list">
-							<volist name="hot" id="v">
-								<li class="feed <if condition="$v['islive'] eq '1'">live<else/></if> "><a class="link" href="/{$v['uid']}" target="_blank"><img class="screenshot thumb" src="__PUBLIC__/home/images/lazyload.png" data-original="{$v['thumb']}"/>
-								<div class="user">
-									<div class="user_left fl"><img class="avatar thumb" src="__PUBLIC__/home/images/lazyload.png" data-original="{$v['avatar']}"/></div>
-									<div class="user_right fl">
-										<p class="username">{$v['user_nicename']}</p>
-										<p class="bottom">
-											<span class="type">{$v['signature']}</span>
-											<span class="nums">{$v['nums']}</span>
-										</p>
-									</div>
+						  <volist name="live" id="v">
 
+							<li class="feed <if condition="$v['islive'] eq '1'">live<else/></if>"><a class="link" href="/{$v['uid']}" target="_blank"><img class="screenshot thumb" src="__PUBLIC__/home/images/lazyload.png" data-original="{$v['thumb']}"/>
+							<div class="user">
+								<div class="user_left fl"><img class="avatar thumb" src="__PUBLIC__/home/images/lazyload.png" data-original="{$v['avatar']}"/></div>
+								<div class="user_right fl">
+									<p class="username">{$v['user_nicename']}</p>
+									<p class="bottom">
+										<span class="type">{$v['signature']}</span>
+										<span class="nums">{$v['nums']}</span>
+									</p>
 								</div>
-
+								
+							</div>
+							
 							</a></li>
 							</volist>
-
-						</ul>
-					</div>
-				</div>
-				<div class="gray_line"></div>
-				<!-- 热门直播 -->
-				<div class="g-box feed-list" id="hot">
-					<div class="box-hd">
-						<h2 class="box-title"><span class="icon"><img src="__PUBLIC__/home/images/index/remen.png"></span>篮球主播</h2>
-						<!-- 	<a class="box-more" href="/category/1">查看更多 &gt;&gt;</a> -->
-					</div>
-					<div class="box-bd">
-						<ul class="list">
-							<volist name="hot" id="v">
-								<li class="feed <if condition="$v['islive'] eq '1'">live<else/></if> "><a class="link" href="/{$v['uid']}" target="_blank"><img class="screenshot thumb" src="__PUBLIC__/home/images/lazyload.png" data-original="{$v['thumb']}"/>
-								<div class="user">
-									<div class="user_left fl"><img class="avatar thumb" src="__PUBLIC__/home/images/lazyload.png" data-original="{$v['avatar']}"/></div>
-									<div class="user_right fl">
-										<p class="username">{$v['user_nicename']}</p>
-										<p class="bottom">
-											<span class="type">{$v['signature']}</span>
-											<span class="nums">{$v['nums']}</span>
-										</p>
-									</div>
-
-								</div>
-
-							</a></li>
-							</volist>
-
-						</ul>
-					</div>
-				</div>
-				<div class="gray_line"></div>
-				<!-- 热门直播 -->
-				<div class="g-box feed-list" id="hot">
-					<div class="box-hd">
-						<h2 class="box-title"><span class="icon"><img src="__PUBLIC__/home/images/index/remen.png"></span>电竞主播</h2>
-						<!-- 	<a class="box-more" href="/category/1">查看更多 &gt;&gt;</a> -->
-					</div>
-					<div class="box-bd">
-						<ul class="list">
-							<volist name="hot" id="v">
-								<li class="feed <if condition="$v['islive'] eq '1'">live<else/></if> "><a class="link" href="/{$v['uid']}" target="_blank"><img class="screenshot thumb" src="__PUBLIC__/home/images/lazyload.png" data-original="{$v['thumb']}"/>
-								<div class="user">
-									<div class="user_left fl"><img class="avatar thumb" src="__PUBLIC__/home/images/lazyload.png" data-original="{$v['avatar']}"/></div>
-									<div class="user_right fl">
-										<p class="username">{$v['user_nicename']}</p>
-										<p class="bottom">
-											<span class="type">{$v['signature']}</span>
-											<span class="nums">{$v['nums']}</span>
-										</p>
-									</div>
-
-								</div>
-
-							</a></li>
-							</volist>
-
-						</ul>
-					</div>
-				</div>
-				<div class="gray_line"></div>
-				<!-- 热门直播 -->
-				<div class="g-box feed-list" id="hot">
-					<div class="box-hd">
-						<h2 class="box-title"><span class="icon"><img src="__PUBLIC__/home/images/index/remen.png"></span>综合主播</h2>
-						<!-- 	<a class="box-more" href="/category/1">查看更多 &gt;&gt;</a> -->
-					</div>
-					<div class="box-bd">
-						<ul class="list">
-							<volist name="hot" id="v">
-								<li class="feed <if condition="$v['islive'] eq '1'">live<else/></if> "><a class="link" href="/{$v['uid']}" target="_blank"><img class="screenshot thumb" src="__PUBLIC__/home/images/lazyload.png" data-original="{$v['thumb']}"/>
-								<div class="user">
-									<div class="user_left fl"><img class="avatar thumb" src="__PUBLIC__/home/images/lazyload.png" data-original="{$v['avatar']}"/></div>
-									<div class="user_right fl">
-										<p class="username">{$v['user_nicename']}</p>
-										<p class="bottom">
-											<span class="type">{$v['signature']}</span>
-											<span class="nums">{$v['nums']}</span>
-										</p>
-									</div>
-
-								</div>
-
-							</a></li>
-							</volist>
-
 						</ul>
 					</div>
 				</div>
