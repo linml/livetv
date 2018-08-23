@@ -20,6 +20,7 @@ if (ini_get('magic_quotes_gpc')) {
 	$_GET = stripslashesRecursive($_GET);
 	$_POST = stripslashesRecursive($_POST);
 }
+
 //开启调试模式
 define("APP_DEBUG", 0);
 //网站当前路径
