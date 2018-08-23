@@ -15,7 +15,6 @@ class IndexController extends HomebaseController {
 	
     //首页
 	public function index() {
-//        var_dump(333);exit;
 
 		$prefix= C("DB_PREFIX");
 		$this->assign("current",'index');	
@@ -25,9 +24,6 @@ class IndexController extends HomebaseController {
 		/*获取推荐播放列表(正在直播，推荐，按粉丝数排序)*/
 
 		$indexLive=M("users_live")->query("select l.* from __PREFIX__users_live l left join __PREFIX__users u on l.uid=u.id where l.islive='1' and u.isrecommend='1' and l.type='0' ");
-echo '<pre>';
-		var_dump(M());exit;
-
 
 		foreach ($indexLive as $k => $v){
 			if($v['thumb']==""){
@@ -36,12 +32,8 @@ echo '<pre>';
 			
 			$indexLive[$k]['fans_nums']=M("users_attention")->where("touid={$v['uid']}")->count();
 		}
-		echo C('DB_NAME').PHP_EOL;
 
-		echo C('DB_USER').PHP_EOL;exit;
 
-//var_dump(C('DB_NAME'));
-//		var_dump($indexLive);exit;
 		$sort=array_column($indexLive,"fans_nums");
 		array_multisort($sort, SORT_DESC, $indexLive);
 		$indexLive1=array_slice($indexLive,0,4);
