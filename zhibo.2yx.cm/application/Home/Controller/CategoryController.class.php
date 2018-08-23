@@ -25,14 +25,24 @@ class CategoryController extends HomebaseController {
 			switch($cat){
 				case "1":
 						$where="u.sex='1' and l.islive='1' ";
-						$site_seo_title='国民男神';
+						$site_seo_title='直播';
 						$current=1;	
 						break;
 				case "2":
 						$where="u.sex='2' and l.islive='1' ";
-						$site_seo_title='女神驾到';
+						$site_seo_title='娱乐';
 						$current=2;
 						break;
+                case "3":
+                    $where="u.sex='2' and l.islive='1' ";
+                    $site_seo_title='榜单';
+                    $current=3;
+                    break;
+                case "4":
+                    $where="u.sex='2' and l.islive='1' ";
+                    $site_seo_title='赛程';
+                    $current=4;
+                    break;
 				default :
 						$where="l.islive='1'";
 						$site_seo_title='';
