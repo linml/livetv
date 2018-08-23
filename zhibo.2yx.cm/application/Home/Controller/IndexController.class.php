@@ -25,8 +25,8 @@ class IndexController extends HomebaseController {
 		/*获取推荐播放列表(正在直播，推荐，按粉丝数排序)*/
 
 		$indexLive=M("users_live")->query("select l.* from __PREFIX__users_live l left join __PREFIX__users u on l.uid=u.id where l.islive='1' and u.isrecommend='1' and l.type='0' ");
-
-		//var_dump($indexLive);
+echo '<pre>';
+		var_dump(M());exit;
 
 
 		foreach ($indexLive as $k => $v){
