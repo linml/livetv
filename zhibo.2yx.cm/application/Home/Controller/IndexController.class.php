@@ -36,13 +36,6 @@ class IndexController extends HomebaseController {
 
 		$sort=array_column($indexLive,"fans_nums");
 		array_multisort($sort, SORT_DESC, $indexLive);
-        echo '<pre>';
-        var_dump($sort);
-
-        echo '<hr/>';
-        echo '<pre>';
-        var_dump($indexLive);
-        exit;
 		$indexLive1=array_slice($indexLive,0,4);
 
 
